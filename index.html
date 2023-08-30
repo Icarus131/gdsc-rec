@@ -27,9 +27,9 @@
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                <li class="nav__item"><a href="#interests" class="nav__link">Domains</a></li>
+                <li class="nav__item"><a href="#domains" class="nav__link">Domains</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#vision" class="nav__link">Testimonials</a></li>
+                <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
                 <li class="nav__item"><a href="#platforms" class="nav__link">Contact</a></li>
             </ul>
         </div>
@@ -57,7 +57,7 @@
     <div class="home__data">
         <h1 class="home__title">Welcome to the Google<br>Developer Student Club!<br></h1>
         <div class="home__text">
-            <p class="interests__text">We are excited to announce that GDSC PESU RR is starting its recruitments! If you're passionate about technology and want to join our vibrant community, don't miss this opportunity. </p>
+            <p class="general__text">We are excited to announce that GDSC PESU RR is starting its recruitments! If you're passionate about technology and want to join our vibrant community, don't miss this opportunity. </p>
         </div>
 
             <a href="#">
@@ -74,14 +74,14 @@
 
 <!--===== DOMAINS =====-->
 
-<section class="interests section" id="interests">
+<section class="domains section" id="domains">
     <h2 class="section-title">Other Domains at GDSC.</h2>
-        <div class="interests__container bd-grid">     
+        <div class="domains__container bd-grid">     
             <section class="card">
-                <div class="product-image">
+                <div class="card-image">
                     <img src="assets/img/GeoAlt.png" alt="ML" draggable="false">
                 </div>
-                <div class="product-info">
+                <div class="card-info">
                     <h2>Machine Learning</h2>
                     <p>Lorem Ipsum Machine Learning is cool because of GeorgeHotz</p>
                 </div>
@@ -94,10 +94,10 @@
 
             
             <section class="card">
-                <div class="product-image">
+                <div class="card-image">
                     <img src="assets/img/GeoAlt.png" alt="Cloud" draggable="false">
                 </div>
-                <div class="product-info">
+                <div class="card-info">
                     <h2>Cloud Computing</h2>
                     <p>Lorem Ipsum Machine Learning is cool because of GeorgeHotz</p>
                 </div>
@@ -110,10 +110,10 @@
 
 
           <section class="card">
-            <div class="product-image">
+            <div class="card-image">
                 <img src="assets/img/GeoAlt.png" alt="AppDev" draggable="false">
             </div>
-            <div class="product-info">
+            <div class="card-info">
                 <h2>App Development</h2>
                 <p>Lorem Ipsum Machine Learning is cool because of GeorgeHotz</p>
             </div>
@@ -122,10 +122,8 @@
                     <button class="button">Learn More</button>
                 </a>
             </div>
-         </section>
-    
+         </section> 
     </div>
-
 </section>
 
  <!--===== ABOUT =====-->
@@ -144,11 +142,11 @@
                 </div>
             </section>
 
-            <!--===== VISION =====-->
-            <section class="staff section" id="vision">
+            <!--===== TESTIMONIALS =====-->
+            <section class="testimonials section" id="testimonials">
                 <h2 class="section-title">Testimonials.</h2>
                 
-                    <div class="interests__container bd-grid" style="display: block; padding-top: 30vh;">
+                    <div class="domains__container bd-grid" style="display: block; padding-top: 30vh;">
 
                     <section class="carousel" aria-label="Gallery">
       <ol class="carousel__viewport">
@@ -250,10 +248,18 @@
         </ol>
       </aside>
 
-    </section>
-</div>
-</section>     
+       
+        </section>
+        </div>
+    </section>     
 </main>
+
+
+
+
+
+
+
 
         <!--===== SCROLL REVEAL =====-->
         <script src="assets/js/scrollreveal.js"></script>
@@ -263,16 +269,16 @@
         <script src="assets/js/particles.js"></script>
         <script src="assets/js/app.js"></script>
         <script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-200px";
-  }
-  prevScrollpos = currentScrollPos;
-} 
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("nav").style.top = "0";
+                } else {
+                document.getElementById("nav").style.top = "-200px";
+                }
+                prevScrollpos = currentScrollPos;
+                } 
         </script>
     </body>
 </html>
