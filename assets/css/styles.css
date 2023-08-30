@@ -225,7 +225,11 @@ img {
 
 
 .home__text {
-  margin-bottom: var(--mb-6);
+    word-break: break-word;
+    line-height: 2rem;
+    width: 30rem;
+    padding-right: 2rem;
+    font-size: small;
 }
 
 .home__title-color {
@@ -430,10 +434,6 @@ button:hover span{
 .home__img {
 display: none;
 }
-.home-sticky-button{
-    width: 400px;
-}
-
 }
 @media screen and (max-width: 1102px) {
   .home {
@@ -444,19 +444,49 @@ display: none;
   }
 }
 
+@media screen and (max-width: 813px){
+    b{
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 430px){
+    b{
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 770px){
+    .test__container{
+        font-size: smaller;
+        margin: -1rem;
+    }
+    .test__img{
+        width: 60px;
+    }
+
+}
+@media screen and (max-width: 480px){
+    .home__title{
+        font-size: x-large;
+
+    }
+    .home__text{
+        width: 20rem; 
+    }
+    .section-title{
+        font-size: 30px;
+    }
+}
+
+
+
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
-  }
-  .home__social {
-    padding-top: 0;
-    padding-bottom: 2.5rem;
-    flex-direction: row;
-    align-self: flex-end;
-  }
-  .home__social-icon {
-    margin-bottom: 0;
-    margin-right: var(--mb-4);
   }
   .home__img {
     width: 300px;
@@ -477,7 +507,7 @@ display: none;
     column-gap: 2rem;
     padding-top: 2rem;
   }
-
+}
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -688,14 +718,8 @@ b{
 
 }
 
-b:before{
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	bottom: 2px;
-	content: '';
-	width: 50%;
-}
+
+
 
 b span:nth-child(1){
 	position: absolute;
@@ -720,7 +744,7 @@ b span:nth-child(1){
 
 
 
-b span:nth-child(3){
+b span:nth-child(2){
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -780,7 +804,7 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 45%;
+  padding-top: 75%;
   perspective: 100px;
 }
 
@@ -804,7 +828,7 @@ ol, li {
   background-color: #5D5FEF;
   counter-increment: item;
   border-radius: 25px;
-  height: 20rem;
+  height: 19rem;
 }
 
 
@@ -925,8 +949,35 @@ ol, li {
 }
 
 .test__img img {
-  width: 100px;
+  width: 90px;
   border-radius: .5rem;
 }
+
+@media screen and (max-width: 440px){
+    .carousel__slide{
+        height: 16rem;
+    }
+    .test__container{
+        padding-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 376px){
+    .carousel__slide{
+        height: 14rem;
+    }
+    .test__container{
+        padding-top: 20px;
+    }
+    .test__subtitle{
+        font-size: medium;
+    }
+    .test__img{
+        display: none;
+    }
+
+}
+
 
 
