@@ -804,7 +804,7 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 75%;
+  padding-top: 45%;
   perspective: 100px;
 }
 
@@ -979,5 +979,10 @@ ol, li {
 
 }
 
-
-
+@media screen and (max-width: 750px){
+.carousel {
+  position: relative;
+  padding-top: 75%;
+  perspective: 100px;
+}
+}
